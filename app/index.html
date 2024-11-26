@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8"> 
+ <title>Voting DApp</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <style type="text/css">
+    .vote-row{
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+    .vote-person{
+      height: 150px;
+      width: 150px;
+      border: 1px solid #ccc;
+      margin:0 auto;
+
+    }
+    .vote-person:hover{
+      background-color: #eee;
+    }
+    .vote-btn{
+      margin-top: 14px;
+      width:100%;
+      border-radius: 10px;
+      border-top-left-radius:0em;
+      border-top-right-radius:0em;
+    }
+    .vote-name{
+      font-size: 18px;
+      margin-top:7px;  
+    }
+    .vote-num{
+      width:149px;
+      height:20px;
+      border: 1px solid #ccc;
+      background-color: #ccc;
+      text-align: center;
+      margin:0px auto 0px auto;
+      padding-top: 0px;
+      font-size: 14px;
+
+    }
+
+    .head{
+      width:80px;
+      height:80px;
+      border: 1px solid #ccc;
+      border-radius: 50%;      
+      margin:10px auto 6px auto;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body class="container">
+ <h2 class="text-center">简易投票 DApp</h2>
+
+  <div class="row vote-row">
+      <div class="col-md-4 col-xs-4" >
+        <div class="vote-person">
+          <div class="text-center vote-name">小红</div>
+          <div id="candidate-1" align="center"><img class="head" src="images/head1.png" width="80px"/></div>
+          <div id="vote-num1"  class="text-center vote-num"></div>
+          <a href="#" class="btn btn-primary vote-btn">为TA投票</a>
+          </div>
+        </div>      
+        <div class="col-md-4 col-xs-4">
+        <div class="vote-person">
+          <div class="text-center vote-name">小明</div>
+          <div id="candidate-2" align="center"><img class="head" src="images/head2.png" width="80px"/></div>
+          <div id="vote-num2"  class="text-center vote-num"></div>         
+          <a href="#" class="btn btn-primary vote-btn">为TA投票</a>        
+        </div> 
+        </div>      
+      <div class="col-md-4 col-xs-4">
+        <div class="vote-person">
+          <div class="text-center vote-name">小强</div>
+          <div id="candidate-3" align="center"><img class="head" src="images/head3.png" width="80px"/></div>
+          <div id="vote-num3"  class="text-center vote-num"></div>         
+          <a href="#" class="btn btn-primary vote-btn">为TA投票</a>        
+        </div>       
+      </div>
+  </div>
+</body>
+<!--<script src="./web3.js"></script>-->
+<script src="./app.js"></script>
+</html>
